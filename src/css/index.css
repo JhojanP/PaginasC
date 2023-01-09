@@ -2,8 +2,8 @@
   margin: 0;
   padding: 0; 
   box-sizing: border-box;
-  --negro :#000;
-  --blanco :rgb(248, 241, 241);
+  --black :#000;
+  --white :rgb(248, 241, 241);
   --primary :rgb(12, 246, 31);
   --secondary :rgb(240, 12, 221);  
   --animate :rgb(61, 12, 240);  
@@ -16,6 +16,28 @@ body{
 .main{
   width: 100%; 
 }
+/* all tags styles*/
+h1{
+  font-size: 3em;
+  font-weight: 100;
+}
+h4{
+  font-size: 2em;
+  font-weight: 500; 
+}
+
+ul li , nav li {
+  list-style: none;
+}
+
+ul li a , nav li a{
+  text-decoration: none ;
+  color: #fff; 
+}
+ 
+
+
+
 
 /* content header*/
 .header-container{
@@ -52,14 +74,80 @@ body{
   padding: 50px 30px; 
 }
  
+.cian-menu li a{
+   font-size: 25px; 
+}
+
+/*styles btn s*/
+.cian_links {
+  text-decoration: none;
+  font-size: 25px; 
+  padding: 10px 15px 10px 15px;
+  color: var(--white);
+  border-radius: 10px; 
+  cursor: pointer;
+}
+.btnprimary{
+  background-color: rgb(4, 37, 70);
+}
+
 
 
 /*css productos*/
 .productos{
   width: 100%;
   height: 100vh;
-  background-color: var(--termate);
+  background: #76a5af;
 }
+
+.productos .container{
+  padding-top:10px; 
+  text-align: center; 
+}
+.productos .container h1{
+  text-align: center;
+  width: 100%;
+} 
+
+.productos .container .productos-imagenes{
+   width: 93%;
+}
+
+.rows-products{
+  display: flex;  
+  justify-content: space-around ; 
+   
+  margin-top: 10px;
+  margin-bottom:40px;
+}
+.card-product{ 
+  width: 150px;
+  height: 200px;  
+   
+}
+
+.card-product h4{
+  text-align: center;
+  cursor: pointer;
+}
+
+.card-product img{ 
+  width: 150px;
+  height: 160px; 
+  transform: scale(0.99);
+  opacity:1;
+  cursor: pointer;
+  animation: 5s all ease;
+}
+.card-product img:hover{  
+  transform: scale(1);
+  opacity:0.7;
+}
+
+
+
+
+
 /*css servicios*/
 .servicios{
   width: 100%;
@@ -93,20 +181,10 @@ body{
 /*margin*/
 .productos .container , .servicios .container ,
 .cobertura .container , .content-footer .container{ 
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 5%;
+  margin-left: 5%;
 }
 
-
-ul li , nav li {
-  list-style: none;
-}
-
-ul li a , nav li a{
-  text-decoration: none ;
-  color: #fff; 
-}
- 
 
 .reveals{
   position: relative; 
