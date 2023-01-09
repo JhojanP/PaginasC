@@ -97,7 +97,7 @@ ul li a , nav li a{
 .productos{
   width: 100%;
   height: 100vh;
-  background: #76a5af;
+  background: #78d0e4;
 }
 
 .productos .container{
@@ -171,12 +171,7 @@ ul li a , nav li a{
   width: 100%;
   height: 50vh
 }
-.content-footer .footer{
-  
-}
-.content-footer .copyright{
-  
-}
+ 
 
 /*margin*/
 .productos .container , .servicios .container ,
