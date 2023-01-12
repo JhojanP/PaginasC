@@ -1,3 +1,4 @@
+  /*
   function reveal(){
     var revels=document.querySelectorAll(".reveal");  
     revels.forEach((reveal)=>{
@@ -17,4 +18,5 @@ window.addEventListener("scroll",function(){
     reveal();
 });
  
-
+*/
+ 
