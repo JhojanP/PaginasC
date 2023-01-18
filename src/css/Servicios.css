@@ -11,11 +11,11 @@
   position: relative;
 }
 .page-container{  
-    display: flex;  
-    width: 90%;
-    flex-wrap: wrap; 
-    height: 200vh;
-    background: var(--white);
-    margin: 0 auto;
-    min-width: 400px;
-  }
+  display: flex;  
+  width: 90%;
+  flex-wrap: wrap; 
+  height: 200vh;
+  background: var(--white);
+  margin: 0 auto;
+  min-width: 400px
+}

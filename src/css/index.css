@@ -9,14 +9,20 @@
   --animate :rgb(61, 12, 240);  
   --termate :rgb(246, 83, 39);  
   --colorFooter:#272727;
+  --minWidth:400px;
 }
 body{
   font-family: 'Roboto Condensed', sans-serif;
   font-family: 'Saira Condensed', sans-serif;
+  /*position: absolute; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-width:var(--minWidth); 
 }
 .main{
-  position: relative;
-  width: 100%;   
+  width: 100%;  
+  min-width:var(--minWidth); 
 }
 /* all tags styles*/
 h1{
@@ -39,15 +45,17 @@ ul li a , nav li a{
   
 .rows{
   display: flex;  
-  justify-content: space-around ;  
+  justify-content: space-around ; 
+  flex-wrap: wrap; 
   margin-top: 10px;
   margin-bottom:30px;
 }
 
-.container{ 
+.container{   
   width: 90%;
   height: 100vh;  
   margin: auto;
+  min-width: var(--minWidth); 
 }
 
 .whatsapp{
@@ -76,6 +84,7 @@ ul li a , nav li a{
 } 
 .icon-social{
   color: var(--white) !important;  
+  cursor: pointer;
 }
 
 
@@ -86,48 +95,61 @@ ul li a , nav li a{
   width: 100%;
   height: 100vh;
   background-color: var(--negro);
+  min-width: 400px;
 }
 
 .header-container .header-pages{
   width: 100%;
-  height: 100px !important; 
+  height: 90px !important; 
 }
 
 
 .cian-header{
   width: 100%;
-  height: 100px;
+  height: auto;
   display: flex; 
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items:  center;
+  justify-content:space-between;
   background-color: var(--primary);
+  padding: 0.4rem;
+  text-align: center;
 }
 
 .cian-logo{
-  width: 20%;  
-  display: flex;
-  justify-content: center;
-  align-items: center; 
+  width: auto;   
+  padding-top: 0.5rem;
+  padding-left: 1rem;
 }
 .cian-logo img{
-  width: 200px;
-  height: auto;
+  width: 230px;
+  height: 80px;
 }
-.cian-menu{
-  width: 80%; 
+.cian-menu{ 
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: end;
-  padding-right: 15px; 
+  justify-content: end; 
+}
+.cian-menu .list{
+  display: flex;
+  list-style: none; 
+}
+#toggler, .cian-header label{
+  display: none;
 }
 .cian-menu li{
-  padding: 50px 30px; 
+  padding: 20px 20px; 
 }
 .cian-menu li a{
-   font-size: 25px; 
+   font-size: 1.6rem; 
 }
 .cian-slider{
   background: var(--black);
   width: 100%;
   height: 100vh;
+  min-width:var(--minWidth); 
 }
 
 /*styles btn s*/
@@ -162,15 +184,12 @@ ul li a , nav li a{
 
 /*css productos*/
 .productos{
-  width: auto;
+  width: 100%;
   height: 100vh;
   background: #e4e2e2;
-}
-.productos .container{
-  padding-top:10px; 
   text-align: center; 
-}
-.productos .container h1{
+} 
+.productos .container h1{ 
   text-align: center;
   width: 100%;
 }  
@@ -249,7 +268,7 @@ ul li a , nav li a{
 .servicios .container h1{
   text-align: center;
   width: 100%;
-  color: #fff;
+  color:  var(--white);
 }  
 .servicios .container .servicios-imagenes{
    width: auto;
@@ -363,21 +382,20 @@ ul li a , nav li a{
 }
 
 .content-footer .nuestros-clientes{
-  width: 100%; 
-
+  width: 100%;  
 }
  
 
 /*margin*/ 
-.reveals{
+.reveal{
   position: relative; 
-  transform: translateY(144px);
+  transform: translateY(140px);
   opacity: 0;
-  transform: 1s all ease;
+  transition: 2s all ease;
 }
-.reveals .actives{
+.active{   
   transform: translateY(0);
-  opacity: 1; 
+  opacity: 1;  
 }
 
 /*SECCTION : FOOTER*/
@@ -396,21 +414,22 @@ footer .nuestros-clientes{
 }
 
 .footer{
-  display:  grid; 
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 5px;
+  display:  flex;
+  justify-content: space-between;
+  flex-wrap: wrap; 
   padding: 2em;
   height: 300px; 
-  font-size: 25px;
+  font-size:1.5rem;
   background-color:var(--colorFooter) ;
   color: var(--white); 
 }
 .footer div{
-  text-align: center;
+  text-align: justify;
 }
 
 .footer .footer-contacto .footer-contacto-lista .footer-item-icon i{
   padding-right: 10px;
+  cursor: pointer;
 }
 
 .footer .footer-redes-lista{
@@ -449,4 +468,66 @@ footer .nuestros-clientes{
   }
  }
 
- /*MEDIA QUERYS -- RESPONSIVE*/
+ /*MEDIA screan -- RESPONSIVE*/
+
+ @media screen and (max-width:600px){
+  .cian-header{
+    padding:20px; 
+  }
+  .cian-header .cian-logo{
+    padding:0; 
+  }
+  .cian-menu{
+    width: 100%; 
+    max-height: 0;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5em;
+  }
+  .cian-menu .list{
+    flex-direction: column;
+    align-items: center; 
+    width: 100%;
+  }
+  .cian-menu .list li{
+    width: 100%;
+    position: relative;
+  }
+  .cian-menu .list li:hover{
+    background:var(--black);
+    transition: all 1s ease;
+  }
+ 
+  .cian-header label{
+    display:inline-flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 2rem;
+    color: var(--white);
+  }
+  #toggler:checked ~ .cian-menu{
+    max-height: 100%;
+  }
+ }
+
+ @media screen and (max-width:820px){
+  .cian-logo img{
+    width: 180px;
+    height: 80px;
+  }
+  .cian-menu li{
+    padding: 0; 
+  }
+  .cian-menu li a{
+     font-size: 0.8rem; 
+  }
+ }
+ @media screen and (max-width:992px){
+  .cian-menu li{
+    padding: 20px 20px; 
+  }
+  .cian-menu li a{
+     font-size: 1.4rem; 
+  }
+ }

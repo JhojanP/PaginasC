@@ -9,14 +9,18 @@ function reveal(){
         console.log(elementTop)
         
         if(elementTop < windowheight-elementVisible){
-            //reveal.classList.add("active");
+             reveal.classList.add("active");
         }else{
-            //reveal.classList.remove("active");
+             reveal.classList.remove("active");
         }
     });
 }
-window.addEventListener("scroll",function(){
-    reveal();
+window.addEventListener("scroll",function(e){
+    /*let rs=document.querySelectorAll(".rows");   
+    rs.forEach((r)=>{ 
+        r.classList.add("animate__animated","animate__fadeInUp");
+    })*/
+    reveal()
 });
   
  

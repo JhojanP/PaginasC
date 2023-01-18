@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link
         href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Saira+Condensed:wght@100;200;300;400;500;600;700&display=swap"
         rel="stylesheet">
         <link rel="stylesheet" href="src/css/index.css">
@@ -19,15 +22,19 @@
     <main class="main">
         <section class="header-container">
             <header class="cian-header">
-                <div class="cian-logo">
+                <a href="#" class="cian-logo">
                     <img src="public/logo/logo.jpg" alt="ciansolution">
-                </div>
+                </a> 
+                <input type="checkbox" id="toggler">
+                <label for="toggler"><i class="fa fa-bars"></i></i></label>
                 <nav class="cian-menu">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="src/pages/Nosotros.html">Nosotros</a></li>
-                    <li><a href="src/pages/Servicios.html">Servicios</a></li>
-                    <li><a href="src/pages/Productos.html">Productos</a></li>
-                    <li><a href="src/pages/Contactos.html">Contactos</a></li>
+                    <ul class="list">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="src/pages/Nosotros.html">Nosotros</a></li>
+                        <li><a href="src/pages/Servicios.html">Servicios</a></li>
+                        <li><a href="src/pages/Productos.html">Productos</a></li>
+                        <li><a href="src/pages/Contactos.html">Contactos</a></li>
+                    </ul> 
                 </nav>
             </header>
             <div class="cian-slider"> </div>
@@ -35,7 +42,7 @@
         <!--seccion de Productos-->
         <section class="productos">
             <div class="container reveal">
-                <h1>NUESTROS PRODUCTOS</h1>
+                <h1 class="animate__animated animate__fadeInUp">NUESTROS PRODUCTOS</h1>
                 <div class="productos-imagenes">
                     <!--card prod-->
                     <div class="rows">
@@ -133,8 +140,7 @@
                 </div>
                 <a href="src/pages/Productos.html" class="cian_links btnprimary">MAS PRODUCTOS</a>
             </div>
-        </section>
-
+        </section> 
         <!--seccion de Servicios-->
         <section class="servicios">
             <div class="container reveal">
@@ -184,8 +190,7 @@
                 <a href="src/pages/Servicios.html" class="cian_links btnprimary">MAS SERVICIOS</a>
             </div>
 
-        </section>
-
+        </section> 
         <!--seccion de cobertura-->
         <section class="cobertura">
             <div class="container reveal">
@@ -217,7 +222,7 @@
         </section>
         <!--seccion de footer-->
         <footer class="content-footer">
-            <section class="nuestros-clientes">
+            <section class="nuestros-clientes reveal">
                 <h1>NUESTROS CLIENTES</h1>
                 <ul>
                     <li></li>
