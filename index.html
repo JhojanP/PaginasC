@@ -15,18 +15,20 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Saira+Condensed:wght@100;200;300;400;500;600;700&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="src/css/index.css">
+
+    <link rel="icon" href="public/logo/logo.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="src/css/index.css">
 </head>
 
 <body>
     <main class="main">
         <section class="header-container">
             <header class="cian-header">
-                <a href="#" class="cian-logo">
+                <div class="cian-logo" id="goHome"   >
                     <img src="public/logo/logo.jpg" alt="ciansolution">
-                </a> 
+                </div> 
                 <input type="checkbox" id="toggler">
-                <label for="toggler"><i class="fa fa-bars"></i></i></label>
+                <label for="toggler" id="IconMenu"><i class="fa fa-bars" id="IconI" ></i></i></label>
                 <nav class="cian-menu">
                     <ul class="list">
                         <li><a href="index.html">Inicio</a></li>
@@ -37,7 +39,7 @@
                     </ul> 
                 </nav>
             </header>
-            <div class="cian-slider"> </div>
+            <div class="cian-slider" id="cianSlider"> </div>
         </section>
         <!--seccion de Productos-->
         <section class="productos">

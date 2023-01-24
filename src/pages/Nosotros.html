@@ -12,6 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Saira+Condensed:wght@100;200;300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <link rel="icon" href="../../public/logo/logo.jpg" type="image/x-icon" />
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/Nosotros.css">
 </head>
@@ -21,64 +22,64 @@
     <div class="main">
         <section class="header-container ">
             <header class="cian-header">
-                <div class="cian-logo">
+                <div class="cian-logo" id="goHome"   >
                     <img src="../../public/logo/logo.jpg" alt="ciansolution">
-                </div>
+                </div> 
+                <input type="checkbox" id="toggler">
+                <label for="toggler" id="IconMenu"><i class="fa fa-bars" id="IconI" ></i></i></label>
                 <nav class="cian-menu">
-                    <li><a href="../../index.html">Inicio</a></li>
-                    <li><a href="Nosotros.html">Nosotros</a></li>
-                    <li><a href="Servicios.html">Servicios</a></li>
-                    <li><a href="Productos.html">Productos</a></li>
-                    <li><a href="Contactos.html">Contactos</a></li>
+                    <ul class="list">
+                        <li><a href="../../index.html">Inicio</a></li>
+                        <li><a href="Nosotros.html">Nosotros</a></li>
+                        <li><a href="Servicios.html">Servicios</a></li>
+                        <li><a href="Productos.html">Productos</a></li>
+                        <li><a href="Contactos.html">Contactos</a></li>
+                    </ul> 
                 </nav>
-            </header>
-            <div class="page-header">
-                <figure>
-                    <img src="" alt="">
-                    <h2>Nosotros</h2>
-                </figure>
+            </header> 
+            <div class="page-header"> 
             </div>
         </section>
 
         <div class="page-container">
-            <div class="quienes-somos">
-                <h1>QUIENES SOMOS</h1>
-                <div class="card-quienes-somos">
-                    <div class="nosotros-img">
-                        <img src="../../public/cobertura1.jpg" alt="">
-                    </div>
-                    <div class="cian-text">
-                        <p>
-                            Somos una empresa seria dedicada a la venta de
-                            todo tipo de repuestos de maquinarias moviles con los
-                            mejores precios del mercado.
-                        </p>
+            <div class="container reveal">
+                <div class="quienes-somos">
+                    <h1>QUIENES SOMOS</h1>
+                    <div class="card-quienes-somos">
+                        <div class="nosotros-img">
+                            <img src="../../public/cobertura1.jpg" alt="">
+                        </div>
+                        <div class="cian-text">
+                            <p>
+                                Somos una empresa seria dedicada a la venta de
+                                todo tipo de repuestos de maquinarias moviles con los
+                                mejores precios del mercado.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="mision-vision"> 
-                <div class="card-mision-vision">
-                    <div>
-                        <h3>NUESTRA MISION</h3>
-                        <p>
-                            Brindar productos y servicios para la industria
-                            automotriz, atendiendo de manera eficiente las
-                            necesidades de nuestros clientes.
-                        </p>
-                    </div>
-                    <div>
-                        <h3>NUESTRA VISION</h3>
-                        <p>
-                            Ser considerado la empresa líder en nuestro rubro en
-                            un mediano plazo.
-                        </p>
+                <div class="mision-vision"> 
+                    <div class="card-mision-vision">
+                        <div>
+                            <h3>NUESTRA MISION</h3>
+                            <p>
+                                Brindar productos y servicios para la industria
+                                automotriz, atendiendo de manera eficiente las
+                                necesidades de nuestros clientes.
+                            </p>
+                        </div>
+                        <div>
+                            <h3>NUESTRA VISION</h3>
+                            <p>
+                                Ser considerado la empresa líder en nuestro rubro en
+                                un mediano plazo.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
-
+ 
         <footer class="content-footer">
             <section class="nuestros-clientes">
                 <h1>NUESTROS CLIENTES</h1>
