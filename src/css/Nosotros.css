@@ -1,32 +1,32 @@
-.header-container{
+.cyan-slider-container{
+    position: relative;
     width: 100% !important;
-    height: 100vh !important;
-    background-color: var(--negro);
+    height: 90vh  ;
+    background :  var(--black);
+    
 }
 .page-header{
-  background: var(--black);
   width: 100%; 
-  height: 37vh;
-  z-index: 1000 !important; 
-  position: relative;
+  height: 60vh;  
+  background-color: var(--black);
 }
 
-.page-container{  
+.page-container{ 
+  position: relative; 
   display: flex;
   justify-content:center;
   align-items: center;
-  width: 90%;
+  width: 100%;
   flex-wrap: wrap; 
-  height: 120vh;
-  background: var(--white);
+  height: 100vh;
+  background-image:var(--gradientPage);
   margin: 0 auto;
   min-width: 400px;
 }
  
 
 .quienes-somos , .mision-vision{
-  width: 100%;    
-  height: 300px;
+  width: 100%;     
   position: relative;
   display:flex;
   flex-direction: column;
@@ -34,14 +34,46 @@
    
 }
 
+/*gradiens all*/
+.custom-shape-divider-bottom-1676049820 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1676049820 svg {
+  position: relative;
+  display: block;
+  width: calc(182% + 1.3px);
+  height: 180px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1676049820 .shape-fill {
+  fill:  var(--white);
+}
+ 
+
+/**/
+
 .quienes-somos h1, .mision-vision h1{
+  font-weight: 800;
   text-align: center; 
+  padding: 1rem; 
+  background: -webkit-linear-gradient(#64abe9, #200c68);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .card-quienes-somos{ 
   display: flex;
   justify-content:space-around; 
   align-items: center;
   flex-wrap: wrap;  
+  transition: 1s all ease;
 }
 .card-quienes-somos .nosotros-img ,
  .card-quienes-somos .cian-text{  
@@ -74,6 +106,9 @@
 
  .card-mision-vision div h3{   
   font-size:1.6em ;
+  background: -webkit-linear-gradient(#64abe9, #200c68);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
  }
  .card-mision-vision div p{  
  font-size: 1.5em;
@@ -82,3 +117,59 @@
 
 
  /* medias querys*/
+ @media screen and (max-width:940px){ 
+  .quienes-somos, .mision-vision { 
+    height: auto;
+  }
+  .card-quienes-somos{
+    flex-wrap: nowrap;
+  }
+  .card-quienes-somos .nosotros-img, .card-quienes-somos .cian-text { 
+    margin:.5rem;
+    height:auto;
+  }
+  .card-mision-vision {
+    flex-wrap: nowrap;
+  }
+  .card-mision-vision  div  {
+     margin: .5rem;
+  }
+  .card-mision-vision  div p, .card-quienes-somos .cian-text {
+    font-size: 1.2rem;
+  }
+
+ }
+
+
+ @media screen and (max-width:600px){ 
+  .cyan-slider-container {
+    height: 50vh;
+  } 
+  /*container -- pages*/
+  .card-quienes-somos .nosotros-img{
+    display: none;
+  } 
+  .card-quienes-somos .nosotros-img, .card-quienes-somos .cian-text {
+    width: 400px;
+    height: auto;
+  } 
+  .custom-shape-divider-bottom-1676049820{
+    display: none;
+  } 
+  .quienes-somos, .mision-vision {
+    height: auto;
+    text-align: center;
+  }
+  .quienes-somos h1{
+    font-size:2rem;
+    padding: 1rem;
+  }
+  .card-mision-vision h3{ 
+    font-size: 1rem; 
+  }
+  .card-mision-vision {
+    flex-wrap: wrap;
+  }
+}
+
+ 

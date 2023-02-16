@@ -16,36 +16,33 @@
     <link rel="icon" href="../../public/logo/logo.jpg" type="image/x-icon" />
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/Contactos.css">
-</head>
-
-<body>
+</head> 
+<body id="pageCyanSolution">
     <div class="main">
-        <section class="header-container">
-            <header class="cian-header">
-                <div class="cian-logo" id="goHome"   >
-                    <img src="../../public/logo/logo.jpg" alt="ciansolution">
-                </div> 
-                <input type="checkbox" id="toggler">
-                <label for="toggler" id="IconMenu"><i class="fa fa-bars" id="IconI" ></i></i></label>
-                 <nav class="cian-menu">
-                    <ul class="list">
-                        <li><a href="../../index.html">Inicio</a></li>
-                        <li><a href="Nosotros.html">Nosotros</a></li>
-                        <li><a href="Servicios.html">Servicios</a></li>
-                        <li><a href="Productos.html">Productos</a></li>
-                        <li><a href="Contactos.html">Contactos</a></li>
-                    </ul> 
-                </nav>
-            </header> 
+        <header class="cian-header">
+            <div class="cian-logo" id="goHome"   >
+                <img src="../../public/logo/logo.jpg" alt="ciansolution">
+            </div> 
+            <input type="checkbox" id="toggler">
+            <label for="toggler" id="IconMenu"><i class="fa fa-bars" id="IconI" ></i></i></label>
+             <nav class="cian-menu">
+                <ul class="list">
+                    <li><a class="cyan-link cyan-menu " href="../../index.html">Inicio</a></li>
+                    <li><a class="cyan-link cyan-menu " href="Nosotros.html">Nosotros</a></li>
+                    <li><a class="cyan-link cyan-menu " href="Servicios.html">Servicios</a></li>
+                    <li><a class="cyan-link cyan-menu " href="Productos.html">Productos</a></li>
+                    <li class="cyan-li-active"><a class="cyan-link cyan-menu cyan-active" href="Contactos.html">Contactos</a></li>
+                </ul> 
+            </nav>
+        </header> 
+        <section class="header-container"> 
             <div class="page-header">
                 <figure>
                     <img src="" alt="">
                     <h2>Contactenos</h2>
                 </figure>
             </div>
-        </section>
-        
-
+        </section> 
         <div class="page-container">
             <section class="cian-header-contact">
                 <h2>Puede Contactarse con Nosotros por este Medio</h2>
@@ -102,7 +99,7 @@
             </section>
         </div>
         <footer class="content-footer">
-            <section class="nuestros-clientes">
+            <div class="nuestros-clientes reveal">
                 <h1>NUESTROS CLIENTES</h1>
                 <ul>
                     <li></li>
@@ -112,8 +109,8 @@
                     <li></li>
                     <li></li>
                 </ul>
-            </section>
-            <section class="footer">
+            </div>
+            <div class="footer">
                 <div class="footer-logo">
                     <img src="../../public/logo/logo.jpg" alt="ciansolution">
                 </div>
@@ -146,15 +143,16 @@
                         <li><span class="icon-social"><i class="fa fa-instagram"></i></span></li>
                     </ul>
                 </div>
-            </section>
-            <hr>
-            <section class="copyright">
+            </div>
+            <div class="line-break"> <hr>   </div>
+            <div class="copyright">
+                <a href="#pageCyanSolution" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g" >
+                    <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                </a>
                 <p>Copyright © 2023 CIAN SOLUTION - Todos los derechos reservado </p>
-            </section>
+            </div>
         </footer>
-    </div>
-
+    </div> 
     <script src="../js/app.js"></script> 
-</body>
-
+</body> 
 </html>

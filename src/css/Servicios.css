@@ -1,21 +1,109 @@
-.header-container{
-    width: 100% !important;
-    height: 50vh !important;
-    background-color: var(--negro);
-}
-.page-header{
-  background: var(--black);
-  width: 100%; 
-  height: 37vh;
-  z-index: 1000 !important; 
+.cyan-slider-container{
   position: relative;
+  width: 100% !important;
+  height: 70vh  ;
+  background :var(--black)  ; 
+}
+
+ 
+.page-header{
+  width: 100%; 
+  height: 50vh;  
+  background-color: var(--black);
 }
 .page-container{  
-  display: flex;  
-  width: 90%;
-  flex-wrap: wrap; 
+  position: relative;  
+  width: 100%;  
   height: 200vh;
-  background: var(--white);
-  margin: 0 auto;
-  min-width: 400px
+  min-width: 600px;
 }
+.page-header-container{
+  width: 100%; 
+  background:var(--primary);
+}
+.cian-header-services{
+  width: 90%;  
+  position: relative;
+  margin: 0 auto;
+ 
+   
+}
+.cian-header-services h1{
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-weight: 300;
+  font-size: 2.5rem;
+  color: var(--black);
+}
+
+.cian-conten-services ul{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; 
+  align-items: center; 
+  padding: 1rem 0 1rem 0;
+}
+.item-services{
+  position: relative; 
+}
+.item-services::before{
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  width: 3px;
+  height:80%;
+   transform: translateX(1rem);
+  background: var(--black); 
+  border-radius: 50%; 
+}
+.item-services:nth-child(9)::before{  
+  content: "";  
+  display: block;
+  position: absolute;
+  right: 0;
+  width: 3px;
+  height:80%;
+  
+  background: var(--primary); 
+  border-radius: 50%; 
+} 
+.title-services {
+  text-align: center; 
+}
+.title-services a{
+  font-size: 1.5rem; 
+  color: #000;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+
+.services-img{
+  width: 210px; 
+} 
+.services-img img{
+  width: 100%; 
+
+}
+
+/*gradiens all*/
+.custom-shape-divider-bottom-1676049820 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+.custom-shape-divider-bottom-1676049820 svg {
+  position: relative;
+  display: block;
+  width: calc(182% + 1.3px);
+  height: 100px;
+  transform: rotateY(180deg);
+}
+.custom-shape-divider-bottom-1676049820 .shape-fill {
+  fill:  var(--primary);
+}
+ 

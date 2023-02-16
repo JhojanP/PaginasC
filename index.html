@@ -1,45 +1,52 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="es"> 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <meta name="conpanyName" content="Cian Solution">
+    <meta name="author" content="Cian Solution">
+    <title>Cian Solution</title>
     <link rel="stylesheet" href="src/css/font-awesome-4.7.0/css/font-awesome.min.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Saira+Condensed:wght@100;200;300;400;500;600;700&display=swap"
         rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+        
     <link rel="icon" href="public/logo/logo.jpg" type="image/x-icon" />
     <link rel="stylesheet" href="src/css/index.css">
-</head>
-
-<body>
-    <main class="main">
-        <section class="header-container">
-            <header class="cian-header">
-                <div class="cian-logo" id="goHome"   >
-                    <img src="public/logo/logo.jpg" alt="ciansolution">
-                </div> 
-                <input type="checkbox" id="toggler">
-                <label for="toggler" id="IconMenu"><i class="fa fa-bars" id="IconI" ></i></i></label>
-                <nav class="cian-menu">
-                    <ul class="list">
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="src/pages/Nosotros.html">Nosotros</a></li>
-                        <li><a href="src/pages/Servicios.html">Servicios</a></li>
-                        <li><a href="src/pages/Productos.html">Productos</a></li>
-                        <li><a href="src/pages/Contactos.html">Contactos</a></li>
-                    </ul> 
-                </nav>
-            </header>
-            <div class="cian-slider" id="cianSlider"> </div>
+</head> 
+<body id="pageCyanSolution">
+    <main class="main"> 
+        <header class="cian-header">
+            <div class="cian-logo" >
+                <img src="public/logo/logo.jpg" alt="ciansolution" id="goHome">
+            </div>
+            <input type="checkbox" id="toggler">
+            <label for="toggler" id="IconMenu"><i class="fa fa-bars" id="IconI"></i></i></label>
+            <nav class="cian-menu">
+                <ul class="list" id="listamenu">
+                    <li class="cyan-li-active"> <a class="cyan-link cyan-menu cyan-active"  href="index.html">Inicio</a></li>
+                    <li><a class="cyan-link cyan-menu " href="src/pages/Nosotros.html">Nosotros</a></li>
+                    <li><a class="cyan-link cyan-menu " href="src/pages/Servicios.html">Servicios</a></li>
+                    <li><a class="cyan-link cyan-menu " href="src/pages/Productos.html">Productos</a></li>
+                    <li><a class="cyan-link cyan-menu " href="src/pages/Contactos.html">Contactos</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="header-container" id="headerMenu"    > 
+            <div class="cian-slider" id="cianSlider">
+                <div class="custom-shape-divider-bottom-1676001498">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                    </svg>
+                </div>
+            </div>
         </section>
         <!--seccion de Productos-->
         <section class="productos">
@@ -47,211 +54,217 @@
                 <h1 class="animate__animated animate__fadeInUp">NUESTROS PRODUCTOS</h1>
                 <div class="productos-imagenes">
                     <!--card prod-->
-                    <div class="rows">
-                        <div class="card-product">
-                            <div class="card-img">
-                                <img src="public/logo/logo.jpg" alt="ciansolution">
-                            </div>
-                            <div class="card-info">
-                                <p class="text-title">Product title </p> 
-                            </div>
-                            <div class="card-footer">
-                                <span class="text-title">$499.49</span>
-                            </div>
+                    <div class="card-product">
+                        <div class="card-img">
+                            <img src="public/logo/logo.jpg" alt="ciansolution">
                         </div>
-                        <div class="card-product">
-                            <div class="card-img">
-                                <img src="public/logo/logo.jpg" alt="ciansolution">
-                            </div>
-                            <div class="card-info">
-                                <p class="text-title">Product title </p> 
-                            </div>
-                            <div class="card-footer">
-                                <span class="text-title">$499.49</span>
-                            </div>
+                        <div class="card-info">
+                            <p class="text-title">Product title </p>
                         </div>
-                        <div class="card-product">
-                            <div class="card-img">
-                                <img src="public/logo/logo.jpg" alt="ciansolution">
-                            </div>
-                            <div class="card-info">
-                                <p class="text-title">Product title </p> 
-                            </div>
-                            <div class="card-footer">
-                                <span class="text-title">$499.49</span>
-                            </div>
-                        </div>
-                        <div class="card-product">
-                            <div class="card-img">
-                                <img src="public/logo/logo.jpg" alt="ciansolution">
-                            </div>
-                            <div class="card-info">
-                                <p class="text-title">Product title </p> 
-                            </div>
-                            <div class="card-footer">
-                                <span class="text-title">$499.49</span>
-                            </div>
+                        <div class="card-footer">
+                            <span class="text-title">$499.49</span>
                         </div>
                     </div>
-                    <div class="rows">
-                        <div class="card-product">
-                            <div class="card-img">
-                                <img src="public/logo/logo.jpg" alt="ciansolution">
-                            </div>
-                            <div class="card-info">
-                                <p class="text-title">Product title </p> 
-                            </div>
-                            <div class="card-footer">
-                                <span class="text-title">$499.49</span>
-                            </div>
+                    <div class="card-product">
+                        <div class="card-img">
+                            <img src="public/logo/logo.jpg" alt="ciansolution">
                         </div>
-                        <div class="card-product">
-                            <div class="card-img">
-                                <img src="public/logo/logo.jpg" alt="ciansolution">
-                            </div>
-                            <div class="card-info">
-                                <p class="text-title">Product title </p> 
-                            </div>
-                            <div class="card-footer">
-                                <span class="text-title">$499.49</span>
-                            </div>
+                        <div class="card-info">
+                            <p class="text-title">Product title </p>
                         </div>
-                        <div class="card-product">
-                            <div class="card-img">
-                                <img src="public/logo/logo.jpg" alt="ciansolution">
-                            </div>
-                            <div class="card-info">
-                                <p class="text-title">Product title </p> 
-                            </div>
-                            <div class="card-footer">
-                                <span class="text-title">$499.49</span>
-                            </div>
+                        <div class="card-footer">
+                            <span class="text-title">$499.49</span>
                         </div>
-                        <div class="card-product">
-                            <div class="card-img">
-                                <img src="public/logo/logo.jpg" alt="ciansolution">
-                            </div>
-                            <div class="card-info">
-                                <p class="text-title">Product title </p> 
-                            </div>
-                            <div class="card-footer">
-                                <span class="text-title">$499.49</span>
-                            </div>
+                    </div>
+                    <div class="card-product">
+                        <div class="card-img">
+                            <img src="public/logo/logo.jpg" alt="ciansolution">
+                        </div>
+                        <div class="card-info">
+                            <p class="text-title">Product title </p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="text-title">$499.49</span>
+                        </div>
+                    </div>
+                    <div class="card-product">
+                        <div class="card-img">
+                            <img src="public/logo/logo.jpg" alt="ciansolution">
+                        </div>
+                        <div class="card-info">
+                            <p class="text-title">Product title </p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="text-title">$499.49</span>
+                        </div>
+                    </div>
+                    <div class="card-product">
+                        <div class="card-img">
+                            <img src="public/logo/logo.jpg" alt="ciansolution">
+                        </div>
+                        <div class="card-info">
+                            <p class="text-title">Product title </p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="text-title">$499.49</span>
+                        </div>
+                    </div>
+                    <div class="card-product">
+                        <div class="card-img">
+                            <img src="public/logo/logo.jpg" alt="ciansolution">
+                        </div>
+                        <div class="card-info">
+                            <p class="text-title">Product title </p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="text-title">$499.49</span>
+                        </div>
+                    </div>
+                    <div class="card-product">
+                        <div class="card-img">
+                            <img src="public/logo/logo.jpg" alt="ciansolution">
+                        </div>
+                        <div class="card-info">
+                            <p class="text-title">Product title </p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="text-title">$499.49</span>
+                        </div>
+                    </div>
+                    <div class="card-product">
+                        <div class="card-img">
+                            <img src="public/logo/logo.jpg" alt="ciansolution">
+                        </div>
+                        <div class="card-info">
+                            <p class="text-title">Product title </p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="text-title">$499.49</span>
                         </div>
                     </div>
                 </div>
                 <a href="src/pages/Productos.html" class="cian_links btnprimary">MAS PRODUCTOS</a>
             </div>
-        </section> 
+        </section>
         <!--seccion de Servicios-->
         <section class="servicios">
             <div class="container reveal">
                 <h1>NUESTROS SERVICIOS</h1>
                 <div class="servicios-imagenes">
-                    <div class="rows">
-                        <div class="card-services">
-                            <div class="card-image">
-                                <img src="public/fondo.jpg" alt="ciansolution"/>
-                            </div>
-                            <div class="service-name"> Illustration </div> 
+                    <div class="card-services">
+                        <div class="card-image">
+                            <img src="public/fondo.jpg" alt="ciansolution" />
                         </div>
-                        <div class="card-services">
-                            <div class="card-image">
-                                <img src="public/fondo.jpg" alt="ciansolution"/>
-                            </div>
-                            <div class="service-name"> Illustration </div> 
-                        </div>
-                        <div class="card-services">
-                            <div class="card-image">
-                                <img src="public/fondo.jpg" alt="ciansolution"/>
-                            </div>
-                            <div class="service-name"> Illustration </div> 
-                        </div>
+                        <div class="service-name"> Illustration </div>
                     </div>
-                    <div class="rows">
-                        <div class="card-services">
-                            <div class="card-image">
-                                <img src="public/fondo.jpg" alt="ciansolution"/>
-                            </div>
-                            <div class="service-name"> Illustration </div> 
+                    <div class="card-services">
+                        <div class="card-image">
+                            <img src="public/fondo.jpg" alt="ciansolution" />
                         </div>
-                        <div class="card-services">
-                            <div class="card-image">
-                                <img src="public/fondo.jpg" alt="ciansolution"/>
-                            </div>
-                            <div class="service-name"> Illustration </div> 
+                        <div class="service-name"> Illustration </div>
+                    </div>
+                    <div class="card-services">
+                        <div class="card-image">
+                            <img src="public/fondo.jpg" alt="ciansolution" />
                         </div>
-                        <div class="card-services">
-                            <div class="card-image">
-                                <img src="public/fondo.jpg" alt="ciansolution"/>
-                            </div>
-                            <div class="service-name"> Illustration </div> 
+                        <div class="service-name"> Illustration </div>
+                    </div>
+                    <div class="card-services">
+                        <div class="card-image">
+                            <img src="public/fondo.jpg" alt="ciansolution" />
                         </div>
+                        <div class="service-name"> Illustration </div>
+                    </div>
+                    <div class="card-services">
+                        <div class="card-image">
+                            <img src="public/fondo.jpg" alt="ciansolution" />
+                        </div>
+                        <div class="service-name"> Illustration </div>
+                    </div>
+                    <div class="card-services">
+                        <div class="card-image">
+                            <img src="public/fondo.jpg" alt="ciansolution" />
+                        </div>
+                        <div class="service-name"> Illustration </div>
                     </div>
                 </div>
                 <a href="src/pages/Servicios.html" class="cian_links btnprimary">MAS SERVICIOS</a>
             </div>
 
-        </section> 
+        </section>
         <!--seccion de cobertura-->
         <section class="cobertura">
             <div class="container reveal">
-                <div class="cobertura-imagenes"> 
-                        <img src="public/cobertura2.jpg" alt="ciansolution"/> 
-                </div>
-                <div class="cobertura-detalle">
-                    <h1>NUESTRA COBERTURA</h1>
-                    <div class="card-cobertura-detalle">
-                        <p>Nuestra cobertura es a nivel nacional, 
-                            hacemos envios por corrier a provincia.
-                        <p> 
-                        <p class="sub-title">No dudes en contactarnos:</p>
+                <div class="cobertura-card">
+                    <div class="cobertura-imagenes">
+                        <img src="public/cobertura2.jpg" alt="ciansolution" />
+                    </div>
+                    <div class="cobertura-detalle">
+                        <h1>NUESTRA COBERTURA</h1>
+                        <div class="card-cobertura-detalle">
+                            <p>Nuestra cobertura es a nivel nacional,
+                                hacemos envios por corrier a provincia.
+                            <p>
+                            <p class="sub-title">No dudes en contactarnos:</p>
 
-                        <ul class="datos">
-                            <li><i class="fa fa-envelope"></i><span class="email">Prueba@gmail.com</span></li>
-                            <li><i class="fa fa-phone"></i><span class="telefono">999-999-999</span></li>
-                            <li><i class="fa fa-map-marker"></i><span class="direccion">Av.las prueba  Mz A Lt 22 - Huaycan</span>  </li>
-                        </ul>
-                        <h5>REDES SOCIALES</h5>
-                        <div class="redes-sociales">
-                             <span class="whatsapp"><i class="fa fa-whatsapp"></i></span> 
-                             <span class="facebook"><i class="fa fa-facebook"></i></span> 
-                             <span class="instagram"><i class="fa fa-instagram"></i></span> 
+                            <ul class="datos">
+                                <li><i class="fa fa-envelope"></i><span class="email">Prueba@gmail.com</span></li>
+                                <li><i class="fa fa-phone"></i><span class="telefono">999-999-999</span></li>
+                                <li><i class="fa fa-map-marker"></i><span class="direccion">Av.las prueba Mz A Lt 22 -
+                                        Huaycan</span> </li>
+                            </ul>
+                            <h5>REDES SOCIALES</h5>
+                            <div class="redes-sociales">
+                                <span class="whatsapp"><i class="fa fa-whatsapp"></i></span>
+                                <span class="facebook"><i class="fa fa-facebook"></i></span>
+                                <span class="instagram"><i class="fa fa-instagram"></i></span>
+                            </div>
                         </div>
                     </div>
                 </div> 
             </div>
+            <div class="custom-shape-divider-bottom-1">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                        class="shape-fill-1"></path>
+                </svg>
+            </div>
         </section>
         <!--seccion de footer-->
         <footer class="content-footer">
-            <section class="nuestros-clientes reveal">
+            <div class="nuestros-clientes reveal">
                 <h1>NUESTROS CLIENTES</h1>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </section>
-            <section class="footer">
+                <div>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer">
                 <div class="footer-logo">
                     <img src="public/logo/logo.jpg" alt="ciansolution">
                 </div>
                 <div class="footer-menu">
                     <h5>MENU</h5>
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="src/pages/Nosotros.html">Nosotros</a></li>
-                        <li><a href="src/pages/Servicios.html">Servicios</a></li>
-                        <li><a href="src/pages/Productos.html">Productos</a></li>
-                        <li><a href="src/pages/Contactos.html">Conctatos</a></li>
+                    <ul class="footer-menu-menu">
+                        <li><a class="cyan-link" href="index.html">Inicio</a></li>
+                        <li><a class="cyan-link" href="src/pages/Nosotros.html">Nosotros</a></li>
+                        <li><a class="cyan-link" href="src/pages/Servicios.html">Servicios</a></li>
+                        <li><a class="cyan-link" href="src/pages/Productos.html">Productos</a></li>
+                        <li><a class="cyan-link" href="src/pages/Contactos.html">Conctatos</a></li>
                     </ul>
                 </div>
                 <div class="footer-contacto">
                     <ul class="footer-contacto-lista">
-                        <li><span class="footer-item-icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>info@ciansolution.com </li>
+                        <li><span class="footer-item-icon"><i class="fa fa-envelope"
+                                    aria-hidden="true"></i></span>info@ciansolution.com </li>
                         <li><span class="footer-item-icon"><i class="fa fa-phone"></i></span> 999-999-999</li>
                         <li><span class="footer-item-icon"><i class="fa fa-map-marker"></i></span> av.las prueba Mz A Lt
                             22
@@ -266,15 +279,17 @@
                         <li><span class="icon-social"><i class="fa fa-facebook" aria-hidden="true"></i></span></li>
                         <li><span class="icon-social"><i class="fa fa-instagram"></i></span></li>
                     </ul>
-                </div>
-            </section>
-            <hr>
-            <section class="copyright">
+                </div> 
+            </div>
+            <div class="line-break"> <hr>   </div>
+            <div class="copyright">
+                <a href="#pageCyanSolution" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g" >
+                    <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                </a>
                 <p>Copyright © 2023 CIAN SOLUTION - Todos los derechos reservado </p>
-            </section>
-        </footer>
-    </main>
+            </div>  
+        </footer>  
+    </main>  
     <script src="src/js/app.js"></script>
-</body>
-
+</body> 
 </html>
